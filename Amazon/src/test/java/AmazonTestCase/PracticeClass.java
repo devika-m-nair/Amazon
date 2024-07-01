@@ -1,13 +1,17 @@
 package AmazonTestCase;
 
-	import java.util.ArrayList;
-	import java.util.List;
+	import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 	import org.openqa.selenium.By;
 	import org.openqa.selenium.JavascriptExecutor;
-	import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
-	import org.testng.Assert;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 	import org.testng.annotations.AfterClass;
 	import org.testng.annotations.AfterMethod;
 	import org.testng.annotations.AfterSuite;
@@ -140,5 +144,21 @@ import AutomationCore.BaseClass;
 			dataSet[1][1] = "2";
 			return dataSet;
 		}
-		}
+	@Test
+	public void datePicker() {
+		driver.get("https://selenium.qabible.in/date-picker.php");
+		driver.findElement(By.id("single-input-field")).sendKeys("13/07/2024");
+		Actions action=new Actions(driver);
+    	action.sendKeys(Keys.ENTER);
+    	action.build().perform();
+    	driver.findElement(By.id("button-one")).click();
+		Date date=new Date();
+		SimpleDateFormat sdf=new SimpleDateFormat("dd/mm/yyyy");
+		String formateddate=sdf.format(date);
+		driver.findElement(By.id("single-input-field")).sendKeys(formateddate);
+		action.sendKeys(Keys.ENTER);
+    	action.build().perform();
+    	driver.findElement(By.id("button-one")).click();
+	}
+	}
 

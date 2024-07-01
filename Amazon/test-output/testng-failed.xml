@@ -2,19 +2,23 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="Regression Test"/>
-      </run>
-    </groups>
+    <parameter name="password" value="admin123"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="username" value="Admin"/>
     <classes>
-      <class name="AmazonTestCase.NewTestCases">
+      <class name="AmazonTestCase.PracticeClass">
         <methods>
-          <include name="TC03"/>
-          <include name="TC01"/>
-          <include name="TC02"/>
+          <include name="afterTestExample"/>
+          <include name="afterSuiteExample"/>
+          <include name="datePicker"/>
+          <include name="beforeTestExample"/>
+          <include name="afterClassExample"/>
+          <include name="beforeSuiteExample"/>
+          <include name="initialisation"/>
+          <include name="beforeClassExample"/>
+          <include name="afterMethodExample"/>
         </methods>
-      </class> <!-- AmazonTestCase.NewTestCases -->
+      </class> <!-- AmazonTestCase.PracticeClass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

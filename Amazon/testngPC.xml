@@ -6,9 +6,10 @@
 	<parameter name="username" value="Admin"></parameter>
 	<parameter name="password" value="admin123"></parameter>
     <classes>
-      <class name="AmazonTestCase.AmazonTest">
+      <class name="AmazonTestCase.PracticeClass">
 		<methods>
-			<include name="TC06">
+			<!--<include name="TC06">-->
+				<include name="datePicker">
 			</include>
 		</methods>
       </class>

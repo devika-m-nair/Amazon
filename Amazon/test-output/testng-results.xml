@@ -2,32 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-18T07:41:06 IST" name="Suite" finished-at="2024-06-18T07:41:37 IST" duration-ms="30391">
+  <suite started-at="2024-07-01T07:55:47 IST" name="Suite" finished-at="2024-07-01T07:56:03 IST" duration-ms="16147">
     <groups>
     </groups>
-    <test started-at="2024-06-18T07:41:06 IST" name="Test" finished-at="2024-06-18T07:41:37 IST" duration-ms="30391">
-      <class name="AmazonTestCase.AmazonTest">
-        <test-method is-config="true" signature="intialization()[pri:0, instance:AmazonTestCase.AmazonTest@3c77d488]" started-at="2024-06-18T07:41:07 IST" name="intialization" finished-at="2024-06-18T07:41:18 IST" duration-ms="11147" status="PASS">
+    <test started-at="2024-07-01T07:55:47 IST" name="Test" finished-at="2024-07-01T07:56:03 IST" duration-ms="16147">
+      <class name="AmazonTestCase.NewTestCases">
+        <test-method is-config="true" signature="intialization()[pri:0, instance:AmazonTestCase.NewTestCases@52719fb6]" started-at="2024-07-01T07:55:47 IST" name="intialization" finished-at="2024-07-01T07:55:57 IST" duration-ms="9094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialization -->
-        <test-method signature="TC06(java.lang.String,java.lang.String)[pri:0, instance:AmazonTestCase.AmazonTest@3c77d488]" started-at="2024-06-18T07:41:18 IST" name="TC06" finished-at="2024-06-18T07:41:37 IST" duration-ms="18940" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="jqueryDatePicker()[pri:0, instance:AmazonTestCase.NewTestCases@52719fb6]" started-at="2024-07-01T07:55:57 IST" name="jqueryDatePicker" finished-at="2024-07-01T07:56:03 IST" duration-ms="6766" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC06 -->
-      </class> <!-- AmazonTestCase.AmazonTest -->
+        </test-method> <!-- jqueryDatePicker -->
+      </class> <!-- AmazonTestCase.NewTestCases -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

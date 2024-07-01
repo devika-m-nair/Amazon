@@ -13,7 +13,8 @@
 			<!--<include name="TC01"></include>
 			<include name="TC02"></include>
 			<include name="TC03"></include>-->
-			<exclude name="TC01"></exclude>
+			<include name="jqueryDatePicker"></include>
+			
 		</methods>
 
       </class>

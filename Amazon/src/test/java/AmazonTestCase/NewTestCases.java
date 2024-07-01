@@ -1,7 +1,14 @@
 package AmazonTestCase;
 
 import org.testng.annotations.Test;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -42,5 +49,28 @@ public void TC04() {
  public void TC05() {
 	 System.out.println("TestCase5");
 	 //driver.get("https://selenium.qabible.in/index.php");
+ }
+ @Test
+ public void datePicker() {
+		driver.get("https://selenium.qabible.in/date-picker.php");
+		driver.findElement(By.id("single-input-field")).sendKeys("13/07/2024");
+		Actions action=new Actions(driver);
+ 	action.sendKeys(Keys.ENTER);
+ 	action.build().perform();
+ 	driver.findElement(By.id("button-one")).click();
+		Date date=new Date();
+		SimpleDateFormat sdf=new SimpleDateFormat("dd/mm/yyyy");
+		String formateddate=sdf.format(date);
+		driver.findElement(By.id("single-input-field")).sendKeys(formateddate);
+		action.sendKeys(Keys.ENTER);
+ 	action.build().perform();
+ 	driver.findElement(By.id("button-one")).click();
+ 
+}
+ @Test
+ public void jqueryDatePicker() {
+	 driver.get("https://selenium.qabible.in/jquery-date-picker.php");
+	 driver.findElement(By.id("from")).click();
+	 driver.findElement(By.xpath("//td[@class='  ui-datepicker-today']//a")).click();
  }
 }
